@@ -89,8 +89,8 @@ internal class DisabledAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title   = "Нет доступа к \(permission)"
-        message = "Включите его в настройках телефона"
+        title   = "L'accès à \(permission) est désactivé"
+        message = "Veuillez authoriser l'accès à \(permission) dans les paramètres de votre téléphone."
         cancel  = "ОК"
     }
 }
@@ -112,10 +112,10 @@ internal class DeniedAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title    = "Доступ к \(permission) был запрещён"
-        message  = "Включите его в настройках телефона"
-        cancel   = "Отменить"
-        settings = "Настройки"
+        title    = "L'accès à \(permission) est désactivé"
+        message  = "Veuillez authoriser l'accès à \(permission) dans les paramètres de votre téléphone."
+        cancel   = "Annuler"
+        settings = "Paramètres"
     }
     
     @objc func settingsHandler() {
@@ -149,10 +149,10 @@ internal class PrePermissionAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title   = "\(Bundle.main.name) запрашивает доступ к \(permission)"
+        title   = "\(Bundle.main.name) souhaite accéder à \(permission)"
         message = nil
-        cancel  = "Отменить"
-        confirm = "Разрешить"
+        cancel  = "Annuler"
+        confirm = "Authoriser"
     }
     
     fileprivate func confirmHandler(_ action: UIAlertAction) {

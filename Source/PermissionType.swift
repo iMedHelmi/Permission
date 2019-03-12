@@ -84,40 +84,40 @@ public enum PermissionType {
 extension PermissionType: CustomStringConvertible {
     public var description: String {
         #if PERMISSION_CONTACTS
-        if case .contacts = self { return "Контактам" }
+        if case .contacts = self { return "Contacts" }
         #endif
         
         #if PERMISSION_ADDRESS_BOOK
-        if case .addressBook = self { return "Телефонной книге" }
+        if case .addressBook = self { return "Contacts" }
         #endif
         
         #if PERMISSION_LOCATION
-        if case .locationAlways    = self { return "Геолокации" }
-        if case .locationWhenInUse = self { return "Геолокации" }
+        if case .locationAlways    = self { return "Position" }
+        if case .locationWhenInUse = self { return "Position" }
         #endif
         
         #if PERMISSION_NOTIFICATIONS
-        if case .notifications = self { return "Уведомлениям" }
+        if case .notifications = self { return "Notifications" }
         #endif
         
         #if PERMISSION_MICROPHONE
-        if case .microphone = self { return "Микрофону" }
+        if case .microphone = self { return "Microphone" }
         #endif
         
         #if PERMISSION_CAMERA
-        if case .camera = self { return "Камере" }
+        if case .camera = self { return "Appareil Photo" }
         #endif
         
         #if PERMISSION_PHOTOS
-        if case .photos = self { return "Фото" }
+        if case .photos = self { return "Photos" }
         #endif
         
         #if PERMISSION_REMINDERS
-        if case .reminders = self { return "Напоминаниям" }
+        if case .reminders = self { return "Rappels" }
         #endif
         
         #if PERMISSION_EVENTS
-        if case .events = self { return "Календарю" }
+        if case .events = self { return "Évènements" }
         #endif
         
         #if PERMISSION_BLUETOOTH
@@ -125,11 +125,11 @@ extension PermissionType: CustomStringConvertible {
         #endif
         
         #if PERMISSION_MOTION
-        if case .motion = self { return "Данным движения" }
+        if case .motion = self { return "Accéléromètre" }
         #endif
         
         #if PERMISSION_SPEECH_RECOGNIZER
-        if case .speechRecognizer = self { return "Распознаванию речи" }
+        if case .speechRecognizer = self { return "Reconnaissance vocale" }
         #endif
         
         #if PERMISSION_SIRI
@@ -137,7 +137,7 @@ extension PermissionType: CustomStringConvertible {
         #endif
         
         #if PERMISSION_MEDIA_LIBRARY
-        if case .mediaLibrary = self { return "Библиотеке изображений" }
+        if case .mediaLibrary = self { return "Bibliothèque de Photo et Vidéo" }
         #endif
         
         fatalError()
