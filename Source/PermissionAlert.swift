@@ -93,12 +93,12 @@ internal class DisabledAlert: PermissionAlert {
             
         case .contacts:
             title   = "\(Bundle.main.name) n'a pas accès à vos contacts"
-            message = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activer les contacts."
+            message = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activez les contacts."
             cancel  = "ОК"
             
         case .notifications:
             title   = "\(Bundle.main.name) n'a pas accès à vos notifications"
-            message = "L’application requiert l'accès aux notifications de votre iPhone pour pouvoir vous informer des demandes de recommandations de vos proches et les dernières actualités vous concernant."
+            message = "L’application requiert l'accès aux notifications pour vous informer des recommandations et actualités vous concernant. Pour autoriser l'accès appuyez sur Réglages et activez notifications."
             cancel  = "ОК"
             
         default:
@@ -132,13 +132,13 @@ internal class DeniedAlert: PermissionAlert {
             
         case .contacts:
             title   = "\(Bundle.main.name) n'a pas accès à vos contacts"
-            message = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activer les contacts."
+            message = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activez les contacts."
             cancel   = "Annuler"
             settings = "Réglages"
             
         case .notifications:
             title   = "\(Bundle.main.name) n'a pas accès à vos notifications"
-            message = "L’application requiert l'accès aux notifications de votre iPhone pour pouvoir vous informer des demandes de recommandations de vos proches et les dernières actualités vous concernant."
+            message = "L’application requiert l'accès aux notifications pour vous informer des recommandations et actualités vous concernant. Pour autoriser l'accès appuyez sur Réglages et activez notifications."
             cancel   = "Annuler"
             settings = "Réglages"
             
