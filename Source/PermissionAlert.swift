@@ -89,8 +89,8 @@ internal class DisabledAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title   = "L'accès à \(permission) est désactivé"
-        message = "Veuillez authoriser l'accès à \(permission) dans les paramètres de votre téléphone."
+        title   = "\(Bundle.main.name) n'a pas accès à \(permission)"
+        message = "L’application requiert ce service pour une utilisation optimale. Pour autoriser l’accès, appuyez sur paramètres et activez ce dernier."
         cancel  = "ОК"
     }
 }
@@ -112,8 +112,8 @@ internal class DeniedAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title    = "L'accès à \(permission) est désactivé"
-        message  = "Veuillez authoriser l'accès à \(permission) dans les paramètres de votre téléphone."
+        title    = "\(Bundle.main.name) n'a pas accès à \(permission)"
+        message  = "L’application requiert ce service pour une utilisation optimale. Pour autoriser l’accès, appuyez sur paramètres et activez ce dernier."
         cancel   = "Annuler"
         settings = "Paramètres"
     }
