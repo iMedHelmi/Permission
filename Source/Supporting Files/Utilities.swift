@@ -49,6 +49,7 @@ extension UIControl.State: Hashable {
 }
 
 internal extension String {
+    
     static let locationWhenInUseUsageDescription = "NSLocationWhenInUseUsageDescription"
     static let locationAlwaysUsageDescription    = "NSLocationAlwaysUsageDescription"
     static let microphoneUsageDescription        = "NSMicrophoneUsageDescription"

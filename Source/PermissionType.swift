@@ -84,60 +84,60 @@ public enum PermissionType {
 extension PermissionType: CustomStringConvertible {
     public var description: String {
         #if PERMISSION_CONTACTS
-        if case .contacts = self { return "Contacts" }
+        if case .contacts = self { return NSLocalizedString("Contacts", comment: "") }
         #endif
         
         #if PERMISSION_ADDRESS_BOOK
-        if case .addressBook = self { return "Contacts" }
+        if case .addressBook = self { return NSLocalizedString("Address Book", comment: "") }
         #endif
         
         #if PERMISSION_LOCATION
-        if case .locationAlways    = self { return "Position" }
-        if case .locationWhenInUse = self { return "Position" }
+        if case .locationAlways    = self { return NSLocalizedString("Location", comment: "") }
+        if case .locationWhenInUse = self { return NSLocalizedString("Location", comment: "") }
         #endif
         
         #if PERMISSION_NOTIFICATIONS
-        if case .notifications = self { return "Notifications" }
+        if case .notifications = self { return NSLocalizedString("Notifications", comment: "") }
         #endif
         
         #if PERMISSION_MICROPHONE
-        if case .microphone = self { return "Microphone" }
+        if case .microphone = self { return NSLocalizedString("Microphone", comment: "") }
         #endif
         
         #if PERMISSION_CAMERA
-        if case .camera = self { return "Appareil Photo" }
+        if case .camera = self { return NSLocalizedString("Camera", comment: "") }
         #endif
         
         #if PERMISSION_PHOTOS
-        if case .photos = self { return "Photos" }
+        if case .photos = self { return NSLocalizedString("Photos", comment: "") }
         #endif
         
         #if PERMISSION_REMINDERS
-        if case .reminders = self { return "Rappels" }
+        if case .reminders = self { return NSLocalizedString("Reminders", comment: "") }
         #endif
         
         #if PERMISSION_EVENTS
-        if case .events = self { return "Évènements" }
+        if case .events = self { return NSLocalizedString("Events", comment: "") }
         #endif
         
         #if PERMISSION_BLUETOOTH
-        if case .bluetooth = self { return "Bluetooth" }
+        if case .bluetooth = self { return NSLocalizedString("Bluetooth", comment: "") }
         #endif
         
         #if PERMISSION_MOTION
-        if case .motion = self { return "Accéléromètre" }
+        if case .motion = self { return NSLocalizedString("Motion", comment: "") }
         #endif
         
         #if PERMISSION_SPEECH_RECOGNIZER
-        if case .speechRecognizer = self { return "Reconnaissance vocale" }
+        if case .speechRecognizer = self { return NSLocalizedString("Speech Recognizer", comment: "") }
         #endif
         
         #if PERMISSION_SIRI
-        if case .siri = self { return "Siri" }
+        if case .siri = self { return NSLocalizedString("Siri", comment: "") }
         #endif
         
         #if PERMISSION_MEDIA_LIBRARY
-        if case .mediaLibrary = self { return "Bibliothèque de Photo et Vidéo" }
+        if case .mediaLibrary = self { return NSLocalizedString("Media Library", comment: "") }
         #endif
         
         fatalError()

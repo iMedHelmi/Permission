@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Permission
+
+  Created by Mohamed Helmi BEN ALI on 08/05/2019.
+  Copyright © 2019 delba. All rights reserved.
+*/
+
+"%@ would like to access your %@" = "%@ would like to access your %@";
+
+"Permission for %@ was denied" = "Permission for %@ was denied";
+
+"Please enable access to %@ in the Settings app." = "Please enable access to %@ in the Settings app.";
+
+"%@ does not have access to Notifications" = "%@ does not have access to Notifications";
+
+"The application requires access to notifications to inform you of recommendations and news which concern you. Please turn on notifications in the Settings app." = "The application requires access to notifications to inform you of recommendations and news which concern you. Please turn on notifications in the Settings app.";
+
+"%@ does not have access to Contacts" = "%@ does not have access to Contacts";
+
+"Widr would like to access your Contacts in order to connect with other members while protecting your identity. Please enable access to Contacts in the Settings app." = "Widr would like to access your Contacts in order to connect with other members while protecting your identity. Please enable access to Contacts in the Settings app.";
+
+"Cancel" = "Cancel";
+
+"Confirm" = "Confirm";
+
+"Settings" = "Settings";
+
+"OK" = "OK";
+
+"Contacts" = "Contacts";
+
+"Address Book" = "Address Book";
+
+"Location" = "Location";
+
+"Notifications" = "Notifications";
+
+"Microphone" = "Microphone";
+
+"Camera" = "Camera";
+
+"Photos" = "Photos";
+
+"Reminders" = "Reminders";
+
+"Events" = "Events";
+
+"Bluetooth" = "Bluetooth";
+
+"Motion" = "Motion";
+
+"Speech Recognizer" = "Speech Recognizer";
+
+"Siri" = "Siri";
+
+"Media Library" = "Media Library";

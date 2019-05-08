@@ -94,17 +94,17 @@ internal class DisabledAlert: PermissionAlert {
         case .contacts:
             title   = "\(Bundle.main.name) n'a pas accès à vos contacts"
             message = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activez les contacts."
-            cancel  = "ОК"
+            cancel  = NSLocalizedString("OK", comment: "")
             
         case .notifications:
             title   = "\(Bundle.main.name) n'a pas accès à vos notifications"
             message = "L’application requiert l'accès aux notifications pour vous informer des recommandations et actualités vous concernant. Pour autoriser l'accès appuyez sur Réglages et activez notifications."
-            cancel  = "ОК"
+            cancel  = NSLocalizedString("OK", comment: "")
             
         default:
             title   = "\(Bundle.main.name) n'a pas accès à \(permission)"
             message = "L’application requiert ce service pour une utilisation optimale. Pour autoriser l’accès, appuyez sur paramètres et activez ce dernier."
-            cancel  = "ОК"
+            cancel  = NSLocalizedString("OK", comment: "")
             
         }
         
@@ -131,22 +131,23 @@ internal class DeniedAlert: PermissionAlert {
         switch permission.type {
             
         case .contacts:
-            title   = "\(Bundle.main.name) n'a pas accès à vos contacts"
-            message = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activez les contacts."
-            cancel   = "Annuler"
-            settings = "Réglages"
+            title   = NSLocalizedString(String(format: "%@ does not have access to contacts", Bundle.main.name), comment: "")
+            message = NSLocalizedString("Widr would like to access your Contacts in order to connect with other members while protecting your identity. Please enable access to Contacts in the Settings app.", comment: "")
+            cancel   = NSLocalizedString("Cancel", comment: "")
+            settings = NSLocalizedString("Settings", comment: "")
             
         case .notifications:
-            title   = "\(Bundle.main.name) n'a pas accès à vos notifications"
-            message = "L’application requiert l'accès aux notifications pour vous informer des recommandations et actualités vous concernant. Pour autoriser l'accès appuyez sur Réglages et activez notifications."
-            cancel   = "Annuler"
-            settings = "Réglages"
+            title   = NSLocalizedString(String(format: "%@ does not have access to notifications", Bundle.main.name), comment: "")
+            message = NSLocalizedString("The application requires access to notifications to inform you of recommendations and news which concern you. Please turn on notifications in the Settings app.", comment: "")
+            cancel   = NSLocalizedString("Cancel", comment: "")
+            settings = NSLocalizedString("Settings", comment: "")
             
         default:
-            title    = "\(Bundle.main.name) n'a pas accès à \(permission)"
-            message  = "L’application requiert ce service pour une utilisation optimale. Pour autoriser l’accès, appuyez sur paramètres et activez ce dernier."
-            cancel   = "Annuler"
-            settings = "Réglages"
+            
+            title    = NSLocalizedString(String(format: "Permission for %@ was denied", permission), comment: "")
+            message  = NSLocalizedString(String(format: "Please enable access to %@ in the Settings app.", permission), comment: "")
+            cancel   = NSLocalizedString("Cancel", comment: "")
+            settings = NSLocalizedString("Settings", comment: "")
             
         }
         
@@ -184,10 +185,10 @@ internal class PrePermissionAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
         
-        title   = "\(Bundle.main.name) souhaite accéder à \(permission)"
+        title   = NSLocalizedString(String(format: "%@ would like to access your %@", Bundle.main.name, permission), comment: "")
         message = nil
-        cancel  = "Annuler"
-        confirm = "Authoriser"
+        cancel  = NSLocalizedString("Cancel", comment: "")
+        confirm = NSLocalizedString("Confirm", comment: "")
     }
     
     fileprivate func confirmHandler(_ action: UIAlertAction) {

@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Permission
+
+  Created by Mohamed Helmi BEN ALI on 08/05/2019.
+  Copyright © 2019 delba. All rights reserved.
+*/
+
+"%@ would like to access your %@" = "%@ souhaite accéder à %@";
+
+"Permission for %@ was denied" = "L'application n'a pas accès à %@";
+
+"Please enable access to %@ in the Settings app." = "L’application requiert l'accès à %@ pour une utilisation optimale. Pour autoriser l’accès, appuyez sur paramètres et activez ce dernier.";
+
+"%@ does not have access to Notifications" = "%@ n'a pas accès à vos notifications";
+
+"The application requires access to notifications to inform you of recommendations and news which concern you. Please turn on notifications in the Settings app." = "L’application requiert l'accès aux notifications pour vous informer des recommandations et actualités vous concernant. Pour autoriser l'accès appuyez sur Réglages et activez les notifications.";
+
+"%@ does not have access to Contacts" = "%@ n'a pas accès à vos contacts";
+
+"Widr would like to access your Contacts in order to connect with other members while protecting your identity. Please enable access to Contacts in the Settings app." = "L’application requiert l'accès aux contacts de votre iPhone pour pouvoir vous connecter à la communauté Widr. Pour autoriser l'accès appuyez sur Réglages et activez les contacts.";
+
+"Cancel" = "Annuler";
+
+"Confirm" = "Confirmer";
+
+"Settings" = "Réglages";
+
+"OK" = "OK";
+
+"Contacts" = "Contacts";
+
+"Address Book" = "Contacts";
+
+"Location" = "Position";
+
+"Notifications" = "Notifications";
+
+"Microphone" = "Microphone";
+
+"Camera" = "Appareil Photo";
+
+"Photos" = "Photos";
+
+"Reminders" = "Rappels";
+
+"Events" = "Évènements";
+
+"Bluetooth" = "Bluetooth";
+
+"Motion" = "Accéléromètre";
+
+"Speech Recognizer" = "Reconnaissance vocale";
+
+"Siri" = "Siri";
+
+"Media Library" = "Bibliothèque de Photo et Vidéo";
